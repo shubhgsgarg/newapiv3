@@ -1,5 +1,7 @@
 package repository;
 
+import java.util.Optional;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -9,6 +11,6 @@ import ipoentity.Ipo;
 @Repository
 public interface IpoRepo extends JpaRepository<Ipo,Long> {
 	
-	Ipo findByCompanyCode(long companyCode);
+	Optional<Ipo> findByCompanyCode(long companyCode);
 
 }
