@@ -21,7 +21,7 @@ import iposervice.IpoService;
 import ipoentity.Ipo;
 
 @RestController
-@CrossOrigin(origins="http://localhost:3000")
+@CrossOrigin(allowedHeaders="*",origins="*")
 public class IpoController {
 	
 	@Autowired
