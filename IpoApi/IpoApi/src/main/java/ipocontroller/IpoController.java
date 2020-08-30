@@ -50,6 +50,14 @@ public class IpoController {
 		return getIpo;
 	}
 	
+	@GetMapping("/ipo/byCompanyCode/{companyCode}")
+	public Optional<Ipo> getOneipoByCompanyCode(@PathVariable long companyCode)
+	
+	{
+		Optional<Ipo> getIpo=ipoService.getIpoByCompanyCode(companyCode);
+		return getIpo;
+	}
+	
 	
 	@PostMapping("/ipo")
 		public Ipo saveipo(@RequestBody Ipo ipo)

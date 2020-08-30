@@ -8,5 +8,7 @@ import ipoentity.Ipo;
 
 @Repository
 public interface IpoRepo extends JpaRepository<Ipo,Long> {
+	
+	Ipo findByCompanyCode(long companyCode);
 
 }
