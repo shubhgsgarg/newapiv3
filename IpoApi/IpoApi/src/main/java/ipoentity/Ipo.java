@@ -17,6 +17,9 @@ public class Ipo {
 	@Column
 	private long ipoID;
 	
+	@Column 
+	private long companyCode;
+	
 	@Column
 	private String companyName;
 	
@@ -38,6 +41,14 @@ public class Ipo {
 
 	public void setiD(long ipoID) {
 		this.ipoID = ipoID;
+	}
+
+	public long getCompanyCode() {
+		return companyCode;
+	}
+
+	public void setCompanyCode(long companyCode) {
+		this.companyCode = companyCode;
 	}
 
 	public String getCompanyName() {

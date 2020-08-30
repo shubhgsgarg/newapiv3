@@ -30,10 +30,10 @@ public class IpoService {
 		return Ipores;
 	}
 	
-	public Optional<Ipo> getIpoByCompanyCode(companyCode)
+	public Ipo getIpoByCompanyCode(long companyCode)
 	{
-		Optional<Ipo> Ipores=ipoRepo.findByCompanyCode(companyCode);
-		return Ipores;
+		Ipo ipo=ipoRepo.findByCompanyCode(companyCode);
+		return ipo;
 	}
 	
 	public Ipo saveIpo(Ipo ipo)

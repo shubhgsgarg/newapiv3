@@ -51,10 +51,10 @@ public class IpoController {
 	}
 	
 	@GetMapping("/ipo/byCompanyCode/{companyCode}")
-	public Optional<Ipo> getOneipoByCompanyCode(@PathVariable long companyCode)
+	public Ipo getOneipoByCompanyCode(@PathVariable long companyCode)
 	
 	{
-		Optional<Ipo> getIpo=ipoService.getIpoByCompanyCode(companyCode);
+		Ipo getIpo=ipoService.getIpoByCompanyCode(companyCode);
 		return getIpo;
 	}
 	
